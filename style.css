@@ -1,0 +1,50 @@
+.topmenu {
+  font-size: 200%;
+  color: #000000;
+  font-size: 130%;
+  font-weight: bold;
+  font-family: Kalnia;
+  text-decoration: none;
+}
+
+span {
+  color: #D8860B;
+  font-size: 140%;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive;
+  text-decoration: none;
+}
+
+.menu a {
+  border: 1.5px solid black;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+#logo {
+  width: 500px;
+  height: auto;
+}
+
+a:hover {
+  background-color: #ad9c81a5;
+  color: black;
+  transition: 0.3s;
+}
+
+a:active {
+  background-color: #ad9c81f3;
+  color: rgba(0, 0, 0, 0.509);
+}
+
+a {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #E2E2E2;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+}

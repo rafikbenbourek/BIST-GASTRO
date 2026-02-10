@@ -1,1 +1,1 @@
-# BIST-GASTRO
+# bistgastro
