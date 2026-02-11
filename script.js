@@ -1,3 +1,5 @@
+// Commentaire : Ce script permet de changer la carte affichée en fonction du lieu sélectionné
+
 function changerCarte(lieu) {
     let url = "";
 
