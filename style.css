@@ -5,20 +5,26 @@
   padding: 0;
 }
 
+/* ======BODY====== */
+body {
+  overflow-x: hidden;
+  /* Empêche le débordement horizontal */
+}
 
 /* ======HEADER====== */
 header {
   display: flex;
   grid-template-columns: 1fr;
   background: #D8860B;
+  border-bottom: 1px solid black;
   text-align: center;
   align-items: center;
   justify-content: center;
   padding: 0px;
   position: sticky;
-  border-bottom: 1px solid black;
   top: 0;
   letter-spacing: 3px;
+  z-index: 1000;
 }
 
 /* LOGO DU MENU */
@@ -32,8 +38,8 @@ header {
 }
 
 .logomenu {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
 }
 
 .btn-accueil {
@@ -44,18 +50,20 @@ header {
   font-size: 0px;
   border-radius: 100%;
   border: 0px solid black;
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 /* /LOGO DU MENU */
 
-/* MENU */
+/* MENU NAV */
 .topmenu {
   color: #000000;
   font-size: 150%;
   font-weight: bolder;
   font-family: Kalnia;
   text-decoration: none;
+  text-shadow:
+    1px 1px 0 black;
 }
 
 span {
@@ -65,7 +73,12 @@ span {
   font-weight: bold;
   font-family: 'Great Vibes', cursive;
   text-decoration: none;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .menu a {
@@ -74,12 +87,10 @@ span {
   padding: 5px;
 }
 
-
-
 a:hover {
   background-color: #000000a5;
   color: rgb(255, 255, 255);
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 a:active {
@@ -98,24 +109,38 @@ h1 {
   font-family: 'Great Vibes', cursive;
 }
 
-/* /MENU */
+/* /MENU NAV */
 
 
 
 /* ======MAIN====== */
 
 /* HERO SECTION */
-
-#logo {
-  width: 400px;
-  height: auto;
+#background-photo {
   display: block;
-  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  border-bottom: 1px solid #000000;
 }
 
-.logo{
+.image-container {
+  position: relative;
+  text-align: center;
+  display: inline-block
+}
 
-
+.logo {
+  position: absolute;
+  width: 1900px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 /* /HERO SECTION */
+
+/* NOS RECETTES */
+.lacarte {
+  width: 25%;
+}
