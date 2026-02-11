@@ -2,15 +2,16 @@
 <html lang="fr">
 
 <head>
+    <!-- LINKS -->
     <link rel='stylesheet' href='style.css' media='all' />
-    <link rel="shortcut icon" href="./avocat.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./logomenu.png" type="image/x-icon">
     <script src="script.js" defer></script>
 
     <!-- FONTS IMPORTS -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet">
 
-    <!-- BALISES METADONNÉES -->
+    <!-- METADONNÉES -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description"
@@ -25,13 +26,14 @@
 
     <!-- HEADER -->
     <header>
-        <div>
+        <div class="divheader">
+            <a href="index.html" class="btn-accueil">
+                <img class="logomenu" src="./img/logomenu.png" alt="Accueil"></a>
             <nav>
-                <a href="#home">🏠</a>
-                <a class="topmenu" class="menu-btn" a class="Recette" href="#recettes"> <span>N</span> OS RECETTES</a>
-                <a class="topmenu" href="#notrephilo"> <span>N</span> OTRE PHILO</a>
-                <a class="topmenu" href="#localisation"> <span>L</span> OCALISATION</a>
-                <a class="topmenu" href="#avis"> <span>A</span> VIS</a>
+                <a class="topmenu" href="#recettes"> <span>N</span>OS RECETTES</a>
+                <a class="topmenu" href="#notrephilo"> <span>N</span>OTRE PHILO</a>
+                <a class="topmenu" href="#localisation"> <span>L</span>OCALISATION</a>
+                <a class="topmenu" href="#avis"> <span>A</span>VIS</a>
             </nav>
         </div>
     </header>
@@ -40,63 +42,58 @@
         <!-- HERO SECTION -->
         <section id="home">
             <img src="img/bistgastro.png" id="logo">
-            <img src="img/background.jpg" id="background-photo">
+            <img src="img/foodtruck1.jpeg" id="background-photo">
         </section>
 
         <!-- MENU -->
         <section id="recettes">
-            <header>
-                <h2>NOS RECETTES</h2>
-                <img src="img/menu.webp" id="logo">
-            </header>
+            <h2>NOS RECETTES</h2>
+            <img src="img/menu.webp" id="menu">
         </section>
 
         <!-- IMAGES DES PLATS & FOODTRUCK -->
-        <aside>
-            <h2>MENU & FOOD TRUCK</h2>
-            <img src="https://placehold.co/264x150" alt="">
-            <img src="https://placehold.co/264x150" alt="">
-            <img src="https://placehold.co/264x150" alt="">
-            <img src="https://placehold.co/264x150" alt="">
-            <img src="https://placehold.co/264x150" alt="">
-            <img src="https://placehold.co/264x150" alt="">
-        </aside>
-
+        <section>
+            <aside>
+                <h2>MENU & FOOD TRUCK</h2>
+                <img src="https://placehold.co/264x150" alt="IMAGE1">
+                <img src="https://placehold.co/264x150" alt="IMAEG2">
+                <img src="https://placehold.co/264x150" alt="IMAGE3">
+                <img src="https://placehold.co/264x150" alt="IMAGE4">
+                <img src="https://placehold.co/264x150" alt="IMAGE5">
+                <img src="https://placehold.co/264x150" alt="IMAGE6">
+            </aside>
+        </section>
         <!-- NOTRE PHILOSOPHIE -->
         <section id="notrephilo">
-            <header>
-                <h2>PHILOSOPHIE</h2>
-                NOS MENUS SONT COMPOSÉS DE PRODUITS FRAIS, DE SAISON ET LOCAUX, POUR VOUS OFFRIR UNE EXPÉRIENCE
-                CULINAIRE AUTHENTIQUE ET SAVOUREUSE.
-            </header>
+            <h2>PHILOSOPHIE</h2>
+            NOS MENUS SONT COMPOSÉS DE PRODUITS FRAIS, DE SAISON ET LOCAUX, POUR VOUS OFFRIR UNE EXPÉRIENCE
+            CULINAIRE AUTHENTIQUE ET SAVOUREUSE.
         </section>
 
         <!-- LOCALISATION -->
         <section id="localisation">
-            <header>
-                <h3>Où nous trouver ?</h3>
-                <div style="display:flex; gap:30px; align-items:flex-start;">
-                    <!-- LISTE DES MOIS -->
-                    <ul id="mois" style="list-style:none; padding:0;">
-                        <li><button onclick="changerCarte('Bayonne')">Janvier</button></li>
-                        <li><button onclick="changerCarte('Anglet')">Février</button></li>
-                        <li><button onclick="changerCarte('Biarritz')">Mars</button></li>
-                        <li><button onclick="changerCarte('Saint-Jean-de-Luz')">Avril</button></li>
-                        <li><button onclick="changerCarte('Pau')">Mai</button></li>
-                        <li><button onclick="changerCarte('Bidart')">Juin</button></li>
-                        <li><button onclick="changerCarte('Guethary')">Juillet</button></li>
-                        <li><button onclick="changerCarte('Pyongyang')">Août</button></li>
-                        <li><button onclick="changerCarte('Washington')">Septembre</button></li>
-                        <li><button onclick="changerCarte('Tokyo')">Octobre</button></li>
-                        <li><button onclick="changerCarte('Moscow')">Novembre</button></li>
-                        <li><button onclick="changerCarte('Little Saint James')">Décembre</button></li>
-                    </ul>
-                    <!-- CARTE GÉOCALISATION -->
-                    <iframe id="carte" src="https://www.google.com/maps?q=Bayonne&output=embed" width="480" height="300"
-                        style="border: 1px solid black; border-radius: 5px;">
-                    </iframe>
-
-                </div>
+            <h3>Où nous trouver ?</h3>
+            <div style="display:flex; gap:30px; align-items:flex-start;">
+                <!-- LISTE DES MOIS -->
+                <ul id="mois" style="list-style:none; padding:0;">
+                    <li><button onclick="changerCarte('Bayonne')">Janvier</button></li>
+                    <li><button onclick="changerCarte('Anglet')">Février</button></li>
+                    <li><button onclick="changerCarte('Biarritz')">Mars</button></li>
+                    <li><button onclick="changerCarte('Saint-Jean-de-Luz')">Avril</button></li>
+                    <li><button onclick="changerCarte('Pau')">Mai</button></li>
+                    <li><button onclick="changerCarte('Bidart')">Juin</button></li>
+                    <li><button onclick="changerCarte('Guethary')">Juillet</button></li>
+                    <li><button onclick="changerCarte('Pyongyang')">Août</button></li>
+                    <li><button onclick="changerCarte('Washington')">Septembre</button></li>
+                    <li><button onclick="changerCarte('Tokyo')">Octobre</button></li>
+                    <li><button onclick="changerCarte('Moscow')">Novembre</button></li>
+                    <li><button onclick="changerCarte('Little Saint James')">Décembre</button></li>
+                </ul>
+                <!-- CARTE GÉOCALISATION -->
+                <iframe id="carte" src="https://www.google.com/maps?q=Bayonne&output=embed" width="480" height="300">>
+                    style="border: 1px solid black; border-radius: 5px;">
+                </iframe>
+            </div>
         </section>
         <section id="slogan">
             <h3 class="slogan">"La gastronomie liée à l’art des bons produits à prix réduit"</h3>
@@ -105,9 +102,7 @@
 
         <!-- AVIS -->
         <section id="avis">
-            <header>
-                <h2>AVIS</h2>
-            </header>
+            <h2>AVIS</h2>
         </section>
 
     </main>
@@ -116,11 +111,15 @@
     <footer>
         <!-- RÉSEAUX SOCIAUX -->
         <nav>
+            <br>
             <ul>
                 <li> <a href="https://www.facebook.com/groups/1121937588286670/">facebook</a> </li>
                 <li> <a href="https://www.instagram.com/thedudefoodtruck/">instagram</a> </li>
             </ul>
         </nav>
+        <br>
+        <!-- COPYRIGHT -->
+        <p>&copy; Copyright 2026 GAST'BISTRO</p>
     </footer>
 </body>
 
