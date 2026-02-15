@@ -9,6 +9,7 @@
 body {
   overflow-x: hidden;
   /* Empêche le débordement horizontal */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* ======HEADER====== */
@@ -53,7 +54,7 @@ header {
   margin-right: 2px;
 }
 
-/* /LOGO DU MENU */
+/* [END]LOGO DU MENU */
 
 /* MENU NAV */
 .topmenu {
@@ -109,7 +110,7 @@ h1 {
   font-family: 'Great Vibes', cursive;
 }
 
-/* /MENU NAV */
+/* [END]MENU NAV */
 
 
 
@@ -132,18 +133,53 @@ h1 {
 
 .logo {
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* /HERO SECTION */
+/* [END]HERO SECTION */
 
-/* NOS RECETTES */
+
+/* SECTION "NOS RECETTES" */
 .lemenu {
   width: 25%;
   padding: 50px;
   display: inline-block;
+}
+
+#carte {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* SECTION "MENU & FOOD TRUCK" */
+
+
+
+/* SECTION "PHILOSOPHIE" */
+
+
+/* ======FOOTER====== */
+footer {
+  display: flex;
+  grid-template-columns: 1fr;
+  background: #000000;
+  border-top: 2px solid #D8860B;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  color: white;
+  background: #000000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(216, 134, 11, 1) 100%);
+}
+
+#socialmedia {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
 }
