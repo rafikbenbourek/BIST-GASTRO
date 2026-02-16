@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- LINKS -->
+    <link rel='stylesheet' href='style.css' media='all' />
+    <link rel="shortcut icon" href="./img/logomenu.png" type="image/png">
+    <script src="script.js" defer></script>
+
+    <!-- FONTS IMPORTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet">
+
+    <!-- METADONNÉES -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="Votre Food Truck de confiance, offrant une cuisine de qualité à base de produits frais et locaux. Découvrez nos délicieuses recettes et notre philosophie culinaire unique.">
+    <title>B'S FOOD TRUCK"</title>
+
+</head>
+
+<!-- BODY -->
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="divheader">
+            <a href="/" class="btn-accueil">
+                <img class="logomenu" src="./img/logomenu.png" alt="Accueil"></a>
+            <nav>
+                <a class="topmenu" href="#recettes"> <span>N</span>OS RECETTES</a>
+                <a class="topmenu" href="#notrephilo"> <span>N</span>OTRE PHILO</a>
+                <a class="topmenu" href="#localisation"> <span>L</span>OCALISATION</a>
+                <a class="topmenu" href="#avis"> <span>A</span>VIS</a>
+                <a class="topmenu" href="reservation.html"> <span>R</span>ESERVATION</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="home">
+            <img src="img/bistgastro.png" class="logo" alt="BIST'GASTRO">
+            <img src="img/foodtruck00.png" id="background-photo">
+        </section>
+
+
+        <!-- NOS RECETTES -->
+        <section id="recettes">
+            <h2>NOS RECETTES</h2>
+            <img class="lemenu" src="img/menu.webp" alt="La carte du mois">
+        </section> 
+
+        <!-- IMAGES DES PLATS & FOODTRUCK -->
+        <section>
+            <aside id="pictures">
+                <h2>MENU & FOOD TRUCK</h2>
+                <img src="https://placehold.co/264x150" alt="IMAGE1">
+                <img src="https://placehold.co/264x150" alt="IMAEG2">
+                <img src="https://placehold.co/264x150" alt="IMAGE3">
+                <img src="https://placehold.co/264x150" alt="IMAGE4">
+                <img src="https://placehold.co/264x150" alt="IMAGE5">
+                <img src="https://placehold.co/264x150" alt="IMAGE6">
+            </aside>
+        </section>
+        <!-- NOTRE PHILOSOPHIE -->
+        <section id="notrephilo">
+            <h2>PHILOSOPHIE</h2>
+            NOS MENUS SONT COMPOSÉS DE PRODUITS FRAIS, DE SAISON ET LOCAUX, POUR VOUS OFFRIR UNE EXPÉRIENCE
+            CULINAIRE AUTHENTIQUE ET SAVOUREUSE.
+        </section>
+
+        <!-- LOCALISATION -->
+        <section id="localisation">
+            <h3>Où nous trouver ?</h3>
+            <div style="display:flex; gap:480px; align-items:flex-start;">
+                <!-- LISTE DES MOIS -->
+                <ul id="mois" style="list-style:none; padding:20px;">
+                    <li><button onclick="changerCarte('Bayonne')">Janvier</button></li>
+                    <li><button onclick="changerCarte('Anglet')">Février</button></li>
+                    <li><button onclick="changerCarte('Biarritz')">Mars</button></li>
+                    <li><button onclick="changerCarte('Saint-Jean-de-Luz')">Avril</button></li>
+                    <li><button onclick="changerCarte('Pau')">Mai</button></li>
+                    <li><button onclick="changerCarte('Bidart')">Juin</button></li>
+                    <li><button onclick="changerCarte('Guethary')">Juillet</button></li>
+                    <li><button onclick="changerCarte('Pyongyang')">Août</button></li>
+                    <li><button onclick="changerCarte('Washington')">Septembre</button></li>
+                    <li><button onclick="changerCarte('Tokyo')">Octobre</button></li>
+                    <li><button onclick="changerCarte('Moscow')">Novembre</button></li>
+                    <li><button onclick="changerCarte('Little Saint James')">Décembre</button></li>
+                </ul>
+                <!-- CARTE GÉOCALISATION -->
+                <iframe id="carte" src="https://www.google.com/maps?q=Bayonne&output=embed" width="780" height="500">>
+                </iframe>
+            </div>
+        </section>
+        <section id="slogan">
+            <h3 class="slogan">"La gastronomie liée à l’art des bons produits à prix réduit"</h3>
+        </section>
+        </header>
+
+        <!-- AVIS -->
+        <section id="avis">
+            <h2>AVIS</h2>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- RÉSEAUX SOCIAUX -->
+        <nav>
+            <br>
+            <ul id="socialmedia">
+                <li> <a href="https://www.facebook.com/groups/1121937588286670/">facebook</a> </li>
+                <li> <a href="https://www.instagram.com/thedudefoodtruck/">instagram</a> </li>
+            </ul>
+        </nav>
+        <br>
+        <!-- COPYRIGHT -->
+        <p>&copy; Copyright 2026 GAST'BISTRO</p>
+    </footer>
+</body>
+
+</html>
